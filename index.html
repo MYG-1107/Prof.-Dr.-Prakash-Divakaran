@@ -1,1 +1,1825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prof. Dr. Prakash Divakaran | Vice Chancellor, Academic Leader & SCM Expert</title>
+    <meta name="description" content="Official Academic Portfolio of Prof. Dr. Prakash Divakaran - Vice Chancellor at Himalayan University, Academic Leader, Research Mentor, and Supply Chain Expert.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+    <style>
+        :root {
+            --primary: #0f172a;
+            --primary-light: #1e293b;
+            --accent: #c59b27;
+            --accent-hover: #d9a726;
+            --accent-glow: rgba(197, 155, 39, 0.25);
+            --secondary: #1e1b4b;
+            --text-main: #334155;
+            --text-muted: #64748b;
+            --text-light: #f8fafc;
+            --bg-body: #f8fafc;
+            --bg-card: #ffffff;
+            --bg-glass: rgba(255, 255, 255, 0.85);
+            --border: #e2e8f0;
+            --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.08);
+            --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.12);
+            --radius-sm: 8px;
+            --radius-md: 14px;
+            --radius-lg: 24px;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Dark Mode Theme Variables Option */
+        .dark-theme {
+            --primary: #030712;
+            --primary-light: #111827;
+            --text-main: #cbd5e1;
+            --text-muted: #94a3b8;
+            --bg-body: #0b0f17;
+            --bg-card: #111827;
+            --bg-glass: rgba(17, 24, 39, 0.85);
+            --border: #1f2937;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, .brand-font {
+            font-family: 'Cinzel', serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Section Header Styling */
+        .section-title-wrap {
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        .section-subtitle {
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            color: var(--accent);
+            font-weight: 700;
+            font-size: 0.85rem;
+            margin-bottom: 8px;
+            display: inline-block;
+        }
+
+        .section-title {
+            font-size: 2.3rem;
+            color: var(--primary);
+            position: relative;
+            display: inline-block;
+            font-weight: 700;
+        }
+
+        .dark-theme .section-title {
+            color: #ffffff;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: var(--accent);
+            margin: 12px auto 0 auto;
+            border-radius: 2px;
+        }
+
+        /* Header / Navbar */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: var(--bg-glass);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+            transition: var(--transition);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+        }
+
+        .logo-wrap {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-badge {
+            width: 44px;
+            height: 44px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: var(--accent);
+            border: 2px solid var(--accent);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 1.2rem;
+            box-shadow: 0 0 10px var(--accent-glow);
+        }
+
+        .logo-text h2 {
+            font-size: 1.15rem;
+            color: var(--primary);
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .dark-theme .logo-text h2 {
+            color: #fff;
+        }
+
+        .logo-text span {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            display: block;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 500;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--text-main);
+            position: relative;
+        }
+
+        .dark-theme .nav-links a {
+            color: #e2e8f0;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--accent);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover::after, .nav-links a.active::after {
+            width: 100%;
+        }
+
+        .btn-nav {
+            padding: 10px 20px;
+            background: var(--accent);
+            color: #000 !important;
+            border-radius: 30px;
+            font-weight: 700 !important;
+            box-shadow: 0 4px 12px var(--accent-glow);
+        }
+
+        .btn-nav:hover {
+            background: var(--accent-hover);
+            transform: translateY(-2px);
+        }
+
+        .mobile-toggle {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--primary);
+        }
+
+        .dark-theme .mobile-toggle {
+            color: #fff;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 140px 0 80px 0;
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.03) 0%, rgba(30, 27, 75, 0.05) 100%);
+            position: relative;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .hero-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 16px;
+            background: rgba(197, 155, 39, 0.12);
+            border: 1px solid rgba(197, 155, 39, 0.3);
+            border-radius: 30px;
+            color: var(--accent);
+            font-weight: 700;
+            font-size: 0.85rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-title {
+            font-size: 2.8rem;
+            color: var(--primary);
+            line-height: 1.25;
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        .dark-theme .hero-title {
+            color: #ffffff;
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 20px;
+            letter-spacing: 0.5px;
+        }
+
+        .hero-desc {
+            font-size: 1.05rem;
+            color: var(--text-muted);
+            margin-bottom: 30px;
+            max-width: 620px;
+        }
+
+        .hero-ctas {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        .btn-primary {
+            padding: 14px 28px;
+            background: var(--primary);
+            color: #ffffff;
+            border-radius: var(--radius-sm);
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--primary);
+        }
+
+        .btn-primary:hover {
+            background: var(--secondary);
+            transform: translateY(-3px);
+            color: #ffffff;
+        }
+
+        .btn-accent {
+            padding: 14px 28px;
+            background: var(--accent);
+            color: #0f172a;
+            border-radius: var(--radius-sm);
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 6px 18px var(--accent-glow);
+        }
+
+        .btn-accent:hover {
+            background: var(--accent-hover);
+            transform: translateY(-3px);
+            color: #000;
+        }
+
+        .hero-image-wrap {
+            position: relative;
+            text-align: center;
+        }
+
+        .hero-img-card {
+            position: relative;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            border: 4px solid #ffffff;
+            box-shadow: var(--shadow-lg);
+            background: var(--primary);
+        }
+
+        .dark-theme .hero-img-card {
+            border-color: var(--border);
+        }
+
+        .hero-img-card img {
+            width: 100%;
+            height: auto;
+            max-height: 520px;
+            object-fit: cover;
+            display: block;
+            transition: var(--transition);
+        }
+
+        .hero-badge-floating {
+            position: absolute;
+            bottom: -20px;
+            left: -20px;
+            background: var(--bg-card);
+            padding: 18px 24px;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            text-align: left;
+        }
+
+        .hero-badge-floating i {
+            font-size: 2rem;
+            color: var(--accent);
+        }
+
+        .hero-badge-floating h4 {
+            font-size: 1.2rem;
+            color: var(--primary);
+            line-height: 1;
+        }
+
+        .dark-theme .hero-badge-floating h4 {
+            color: #fff;
+        }
+
+        .hero-badge-floating p {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+
+        /* Stats Strip */
+        .stats-section {
+            margin-top: -30px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            background: var(--bg-card);
+            padding: 30px;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--border);
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 10px;
+            border-right: 1px solid var(--border);
+        }
+
+        .stat-item:last-child {
+            border-right: none;
+        }
+
+        .stat-number {
+            font-size: 2.4rem;
+            font-weight: 800;
+            color: var(--accent);
+            font-family: 'Cinzel', serif;
+            line-height: 1;
+            margin-bottom: 6px;
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Sections General */
+        .section-padding {
+            padding: 90px 0;
+        }
+
+        /* About Section */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .about-card {
+            background: var(--bg-card);
+            padding: 35px;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow-md);
+        }
+
+        .about-quote {
+            font-style: italic;
+            border-left: 4px solid var(--accent);
+            padding-left: 20px;
+            margin: 20px 0;
+            color: var(--primary);
+            font-size: 1.05rem;
+            font-weight: 500;
+        }
+
+        .dark-theme .about-quote {
+            color: #cbd5e1;
+        }
+
+        .about-highlights-list {
+            margin-top: 20px;
+        }
+
+        .about-highlights-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 12px;
+            font-size: 0.95rem;
+        }
+
+        .about-highlights-list i {
+            color: var(--accent);
+            margin-top: 4px;
+        }
+
+        /* Competencies & Vision */
+        .competencies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 24px;
+        }
+
+        .comp-card {
+            background: var(--bg-card);
+            padding: 28px;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border);
+            transition: var(--transition);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .comp-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
+            box-shadow: var(--shadow-md);
+        }
+
+        .comp-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            background: rgba(197, 155, 39, 0.1);
+            color: var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            margin-bottom: 18px;
+        }
+
+        .comp-card h3 {
+            font-size: 1.15rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .dark-theme .comp-card h3 {
+            color: #fff;
+        }
+
+        .comp-card p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        /* Experience Timeline */
+        .experience-toggle {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+
+        .tab-btn {
+            padding: 12px 24px;
+            border-radius: 30px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            color: var(--text-main);
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .tab-btn.active, .tab-btn:hover {
+            background: var(--primary);
+            color: #ffffff;
+            border-color: var(--primary);
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--border);
+        }
+
+        .timeline-item {
+            margin-bottom: 40px;
+            position: relative;
+            width: 50%;
+        }
+
+        .timeline-item:nth-child(odd) {
+            left: 0;
+            padding-right: 40px;
+            text-align: right;
+        }
+
+        .timeline-item:nth-child(even) {
+            left: 50%;
+            padding-left: 40px;
+            text-align: left;
+        }
+
+        .timeline-dot {
+            width: 20px;
+            height: 20px;
+            background: var(--accent);
+            border: 4px solid var(--bg-card);
+            border-radius: 50%;
+            position: absolute;
+            top: 5px;
+            z-index: 2;
+            box-shadow: 0 0 10px var(--accent-glow);
+        }
+
+        .timeline-item:nth-child(odd) .timeline-dot {
+            right: -10px;
+        }
+
+        .timeline-item:nth-child(even) .timeline-dot {
+            left: -10px;
+        }
+
+        .timeline-card {
+            background: var(--bg-card);
+            padding: 25px;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .timeline-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            background: rgba(15, 23, 42, 0.08);
+            color: var(--primary);
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .dark-theme .timeline-badge {
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--accent);
+        }
+
+        .timeline-card h3 {
+            font-size: 1.2rem;
+            color: var(--primary);
+            margin-bottom: 4px;
+        }
+
+        .dark-theme .timeline-card h3 {
+            color: #fff;
+        }
+
+        .timeline-card h4 {
+            font-size: 0.95rem;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 12px;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        .timeline-card ul {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            text-align: left;
+        }
+
+        .timeline-card ul li {
+            margin-bottom: 6px;
+            position: relative;
+            padding-left: 14px;
+        }
+
+        .timeline-card ul li::before {
+            content: '•';
+            color: var(--accent);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        /* Books & Research Publications */
+        .filter-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 35px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 10px 20px;
+            background: transparent;
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            color: var(--text-main);
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .filter-btn.active, .filter-btn:hover {
+            background: var(--accent);
+            color: #0f172a;
+            border-color: var(--accent);
+        }
+
+        .books-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 24px;
+        }
+
+        .book-card {
+            background: var(--bg-card);
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .book-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--accent);
+        }
+
+        .book-header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            padding: 24px;
+            color: #ffffff;
+            position: relative;
+        }
+
+        .book-tag {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            background: var(--accent);
+            color: #000;
+            font-size: 0.7rem;
+            font-weight: 800;
+            padding: 3px 10px;
+            border-radius: 10px;
+            text-transform: uppercase;
+        }
+
+        .book-header h3 {
+            font-size: 1.15rem;
+            line-height: 1.3;
+            margin-top: 10px;
+            color: #ffffff;
+        }
+
+        .book-body {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .book-publisher {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+        }
+
+        .book-desc {
+            font-size: 0.88rem;
+            color: var(--text-main);
+            margin-bottom: 16px;
+        }
+
+        /* Awards & Honors */
+        .awards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 24px;
+        }
+
+        .award-card {
+            background: var(--bg-card);
+            padding: 28px;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow-sm);
+            display: flex;
+            gap: 20px;
+            transition: var(--transition);
+        }
+
+        .award-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent);
+            box-shadow: var(--shadow-md);
+        }
+
+        .award-icon {
+            width: 56px;
+            height: 56px;
+            min-width: 56px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(197, 155, 39, 0.2), rgba(197, 155, 39, 0.05));
+            border: 1px solid var(--accent);
+            color: var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        .award-details h3 {
+            font-size: 1.1rem;
+            color: var(--primary);
+            margin-bottom: 4px;
+        }
+
+        .dark-theme .award-details h3 {
+            color: #fff;
+        }
+
+        .award-presenter {
+            font-size: 0.85rem;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .award-desc {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        /* Education Credentials */
+        .edu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .edu-card {
+            background: var(--bg-card);
+            padding: 24px;
+            border-radius: var(--radius-sm);
+            border-left: 4px solid var(--accent);
+            border-top: 1px solid var(--border);
+            border-right: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .edu-degree {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 4px;
+        }
+
+        .dark-theme .edu-degree {
+            color: #fff;
+        }
+
+        .edu-univ {
+            font-size: 0.9rem;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .edu-field {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        /* Global Footprint / Editorial */
+        .global-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .editorial-list li {
+            padding: 14px;
+            background: var(--bg-card);
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 0.9rem;
+        }
+
+        .editorial-list i {
+            color: var(--accent);
+        }
+
+        .country-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .chip {
+            padding: 8px 16px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .chip i {
+            color: var(--accent);
+        }
+
+        /* Contact Section */
+        .contact-wrap {
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
+            gap: 40px;
+            background: var(--bg-card);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .contact-info-panel {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            padding: 45px;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .contact-info-panel h3 {
+            font-size: 1.8rem;
+            margin-bottom: 12px;
+            color: #ffffff;
+        }
+
+        .contact-info-panel p {
+            color: #cbd5e1;
+            font-size: 0.95rem;
+            margin-bottom: 30px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .contact-item-icon {
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+        .contact-item-text span {
+            display: block;
+            font-size: 0.75rem;
+            color: #94a3b8;
+            text-transform: uppercase;
+        }
+
+        .contact-item-text a, .contact-item-text p {
+            color: #ffffff;
+            font-weight: 600;
+            margin-bottom: 0;
+            font-size: 0.95rem;
+        }
+
+        .contact-form-panel {
+            padding: 45px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-main);
+        }
+
+        .dark-theme .form-group label {
+            color: #cbd5e1;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px 16px;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border);
+            background: var(--bg-body);
+            color: var(--text-main);
+            font-family: inherit;
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px var(--accent-glow);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary);
+            color: #ffffff;
+            padding: 50px 0 25px 0;
+            border-top: 1px solid var(--border);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-about h3 {
+            font-size: 1.3rem;
+            color: #ffffff;
+            margin-bottom: 12px;
+        }
+
+        .footer-about p {
+            color: #94a3b8;
+            font-size: 0.9rem;
+            max-width: 400px;
+        }
+
+        .footer-links h4 {
+            font-size: 1rem;
+            color: var(--accent);
+            margin-bottom: 16px;
+        }
+
+        .footer-links ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer-links ul li a {
+            color: #cbd5e1;
+            font-size: 0.85rem;
+        }
+
+        .footer-links ul li a:hover {
+            color: var(--accent);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 25px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.85rem;
+            color: #64748b;
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 992px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .hero-desc {
+                margin: 0 auto 30px auto;
+            }
+            .hero-ctas {
+                justify-content: center;
+            }
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            .global-grid {
+                grid-template-columns: 1fr;
+            }
+            .contact-wrap {
+                grid-template-columns: 1fr;
+            }
+            .timeline::before {
+                left: 20px;
+            }
+            .timeline-item {
+                width: 100%;
+                padding-left: 50px !important;
+                padding-right: 0 !important;
+                text-align: left !important;
+            }
+            .timeline-item:nth-child(even) {
+                left: 0;
+            }
+            .timeline-dot {
+                left: 10px !important;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background: var(--bg-card);
+                flex-direction: column;
+                padding: 20px;
+                border-bottom: 1px solid var(--border);
+                box-shadow: var(--shadow-md);
+            }
+            .nav-links.show {
+                display: flex;
+            }
+            .mobile-toggle {
+                display: block;
+            }
+            .hero-title {
+                font-size: 2rem;
+            }
+            .stats-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .stat-item {
+                border-right: none;
+                border-bottom: 1px solid var(--border);
+                padding-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="container navbar">
+            <a href="#" class="logo-wrap">
+                <div class="logo-badge">PD</div>
+                <div class="logo-text">
+                    <h2>Prof. Dr. Prakash Divakaran</h2>
+                    <span>Vice Chancellor & Academic Leader</span>
+                </div>
+            </a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="#about" class="active">About</a>
+                <a href="#competencies">Leadership</a>
+                <a href="#experience">Experience</a>
+                <a href="#publications">Publications</a>
+                <a href="#awards">Honors</a>
+                <a href="#education">Education</a>
+                <a href="#contact" class="btn-nav">Get In Touch</a>
+            </nav>
+
+            <div class="mobile-toggle" id="mobileToggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-text-wrap">
+                <div class="hero-tag">
+                    <i class="fa-solid fa-building-columns"></i> Vice Chancellor, Himalayan University
+                </div>
+                <h1 class="hero-title">Bridging Academic Excellence & Industrial Innovation</h1>
+                <div class="hero-subtitle">Academic Administrator | Research Mentor | Supply Chain & Operations Expert</div>
+                <p class="hero-desc">
+                    Distinguished institutional leader with 30+ years of combined experience across higher education leadership, research governance, doctoral supervision, and corporate supply chain management.
+                </p>
+                <div class="hero-ctas">
+                    <a href="#contact" class="btn-accent"><i class="fa-solid fa-paper-plane"></i> Connect With Me</a>
+                    <a href="#publications" class="btn-primary"><i class="fa-solid fa-book-open"></i> View Publications</a>
+                </div>
+            </div>
+
+            <div class="hero-image-wrap">
+                <div class="hero-img-card">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80" alt="Prof. Dr. Prakash Divakaran">
+                </div>
+                <div class="hero-badge-floating">
+                    <i class="fa-solid fa-award"></i>
+                    <div>
+                        <h4>30+ Years</h4>
+                        <p>Academic & Corporate Mastery</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Stats Section -->
+    <div class="container stats-section">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-number">30+</div>
+                <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">120+</div>
+                <div class="stat-label">Research Papers</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">25+</div>
+                <div class="stat-label">Academic Books</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">14+</div>
+                <div class="stat-label">Ph.D. Scholars Guided</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">50+</div>
+                <div class="stat-label">Conferences Led</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="section-padding" id="about">
+        <div class="container">
+            <div class="section-title-wrap">
+                <span class="section-subtitle">Biography & Profile</span>
+                <h2 class="section-title">About Prof. Dr. Prakash Divakaran</h2>
+            </div>
+
+            <div class="about-content">
+                <div class="about-card">
+                    <h3>Academic Vision & Institutional Governance</h3>
+                    <p>Prof. Dr. Prakash Divakaran currently serves as Vice Chancellor at Himalayan University, Itanagar, Arunachal Pradesh. With prior administrative roles as Pro Vice Chancellor, Director, Professor, and CEO, he brings a unique multi-dimensional leadership ethos aligned with NEP 2020.</p>
+                    
+                    <div class="about-quote">
+                        "To build globally respected, research-driven, and student-centric higher education institutions that integrate academic rigor, employability, ethics, and technological advancement."
+                    </div>
+
+                    <p>He holds double doctoral qualifications in Business Administration and Management, complemented by extensive corporate experience in global Supply Chain Management with automotive giants.</p>
+                </div>
+
+                <div class="about-card">
+                    <h3>Key Strengths & Impact Highlights</h3>
+                    <ul class="about-highlights-list">
+                        <li><i class="fa-solid fa-circle-check"></i> <strong>University Governance:</strong> Driving UGC compliance, NAAC/NBA accreditation readiness, outcome-based curricula, and IQAC processes.</li>
+                        <li><i class="fa-solid fa-circle-check"></i> <strong>Research Ecosystem:</strong> Editor-in-Chief of Scopus-aligned & UGC journals; successfully mentored 14+ awarded Ph.D. candidates.</li>
+                        <li><i class="fa-solid fa-circle-check"></i> <strong>International Exposure:</strong> Chaired academic forums across USA, Singapore, UAE, Malaysia, Thailand, Philippines, and Vietnam.</li>
+                        <li><i class="fa-solid fa-circle-check"></i> <strong>Rare Industry Integration:</strong> Blending 15+ years of corporate SCM leadership (Polyrub, Minda, TATA Yazaki) into practical curriculum design.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Competencies & Leadership -->
+    <section class="section-padding" id="competencies" style="background: rgba(15, 23, 42, 0.02);">
+        <div class="container">
+            <div class="section-title-wrap">
+                <span class="section-subtitle">Core Pillars</span>
+                <h2 class="section-title">Leadership Competencies</h2>
+            </div>
+
+            <div class="competencies-grid">
+                <div class="comp-card">
+                    <div class="comp-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <h3>University Governance</h3>
+                    <p>Comprehensive strategic planning, policy execution under NEP 2020, and institutional sustainability.</p>
+                </div>
+
+                <div class="comp-card">
+                    <div class="comp-icon"><i class="fa-solid fa-microscope"></i></div>
+                    <h3>Research Supervision</h3>
+                    <p>Building vibrant doctoral research ecosystems, paper publication quality, and patent/innovation promotion.</p>
+                </div>
+
+                <div class="comp-card">
+                    <div class="comp-icon"><i class="fa-solid fa-boxes-packing"></i></div>
+                    <h3>Supply Chain & Operations</h3>
+                    <p>Lean manufacturing, global logistics, inventory systems, and techno-commercial process optimization.</p>
+                </div>
+
+                <div class="comp-card">
+                    <div class="comp-icon"><i class="fa-solid fa-globe"></i></div>
+                    <h3>International MoUs</h3>
+                    <p>Executing strategic academic MoUs with universities in Dubai, Singapore, Thailand, and Europe for student mobility.</p>
+                </div>
+
+                <div class="comp-card">
+                    <div class="comp-icon"><i class="fa-solid fa-award"></i></div>
+                    <h3>Accreditation & IQAC</h3>
+                    <p>Proven leadership in NAAC, NBA, and NIRF framework implementation and continuous quality monitoring.</p>
+                </div>
+
+                <div class="comp-card">
+                    <div class="comp-icon"><i class="fa-solid fa-briefcase"></i></div>
+                    <h3>Industry-Academia Bridge</h3>
+                    <p>Integrating skill development, corporate internships, and entrepreneurship incubation into degree programs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section class="section-padding" id="experience">
+        <div class="container">
+            <div class="section-title-wrap">
+                <span class="section-subtitle">Career Roadmap</span>
+                <h2 class="section-title">Leadership & Professional Experience</h2>
+            </div>
+
+            <div class="timeline">
+                <!-- Academic Leadership -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-badge">May 2025 – Present</span>
+                        <h3>Vice Chancellor</h3>
+                        <h4>Himalayan University, Itanagar, India</h4>
+                        <ul>
+                            <li>Spearheading overall academic, administrative, and strategic governance of the university.</li>
+                            <li>Driving policy alignment with UGC norms and NEP 2020 multi-entry/exit framework.</li>
+                            <li>Expanding national/international academic MoUs, research incubation, and NAAC/NIRF readiness.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-badge">Aug 2022 – May 2025</span>
+                        <h3>Pro Vice Chancellor</h3>
+                        <h4>Himalayan University, Itanagar, India</h4>
+                        <ul>
+                            <li>Oversaw postgraduate and doctoral research programs across all departments.</li>
+                            <li>Facilitated 10+ international academic partnerships in Dubai, Singapore, and Thailand.</li>
+                            <li>Enhanced university research index and publication quality in Scopus-indexed journals.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-badge">Dec 2018 – Present</span>
+                        <h3>Director & CEO</h3>
+                        <h4>Infinite Global Research Conference Pvt. Ltd., Pune</h4>
+                        <ul>
+                            <li>Organizing international multidisciplinary academic conferences globally.</li>
+                            <li>Managing peer-reviewed international journals in law, management, and social sciences.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-badge">July 2013 – Aug 2022</span>
+                        <h3>Professor – Business Administration</h3>
+                        <h4>Himalayan University, Arunachal Pradesh</h4>
+                        <ul>
+                            <li>Guided Ph.D. scholars in SCM, operations, sustainability, and management methodology.</li>
+                            <li>Developed outcome-based curricula for undergraduate and postgraduate management programs.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Industry Experience -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-badge">Corporate Leadership (15+ Yrs)</span>
+                        <h3>Senior SCM & Operations Executive</h3>
+                        <h4>Polyrub Extrusions | Minda Industries | TATA Yazaki</h4>
+                        <ul>
+                            <li><strong>Deputy General Manager (SCM)</strong> – Polyrub Extrusions (India) Pvt. Ltd., Pune.</li>
+                            <li><strong>Deputy Manager (SCM)</strong> – Minda Industries Ltd., Pune.</li>
+                            <li><strong>Assistant Manager (SCM)</strong> – TATA Yazaki AutoComp Ltd. & TEK Electromechanicals.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Books & Publications Section -->
+    <section class="section-padding" id="publications" style="background: rgba(15, 23, 42, 0.02);">
+        <div class="container">
+            <div class="section-title-wrap">
+                <span class="section-subtitle">Scholarly Achievements</span>
+                <h2 class="section-title">Authored Books & Publications</h2>
+            </div>
+
+            <div class="books-grid">
+                <!-- Book 1 -->
+                <div class="book-card">
+                    <div class="book-header">
+                        <span class="book-tag">Vatican & Cambridge</span>
+                        <i class="fa-solid fa-book-journal-whills" style="font-size: 2rem; opacity: 0.3;"></i>
+                        <h3>Harmony Unveiled: Sree Narayana Guru's Blueprint for World Peace</h3>
+                    </div>
+                    <div class="book-body">
+                        <p class="book-publisher"><strong>Publisher:</strong> Lipi Publications, Calicut</p>
+                        <p class="book-desc">Presented at Vatican City to Pope Francis and archived at Cambridge University Library for South Asian research.</p>
+                    </div>
+                </div>
+
+                <!-- Book 2 -->
+                <div class="book-card">
+                    <div class="book-header">
+                        <span class="book-tag">Academic Research</span>
+                        <i class="fa-solid fa-book" style="font-size: 2rem; opacity: 0.3;"></i>
+                        <h3>Research Methodology: A Guide to Ongoing Scholars</h3>
+                    </div>
+                    <div class="book-body">
+                        <p class="book-publisher"><strong>Publisher:</strong> Horizon Books, India</p>
+                        <p class="book-desc">Widely adopted textbook for doctoral and postgraduate management researchers across Indian universities.</p>
+                    </div>
+                </div>
+
+                <!-- Book 3 -->
+                <div class="book-card">
+                    <div class="book-header">
+                        <span class="book-tag">Industry Focus</span>
+                        <i class="fa-solid fa-industry" style="font-size: 2rem; opacity: 0.3;"></i>
+                        <h3>Lean Manufacturing & Its Effectiveness in Automobile Industry</h3>
+                    </div>
+                    <div class="book-body">
+                        <p class="book-publisher"><strong>Publisher:</strong> LAP Lambert Academic Publishing, Germany</p>
+                        <p class="book-desc">In-depth empirical research on lean operations, waste reduction, and productivity in auto manufacturing.</p>
+                    </div>
+                </div>
+
+                <!-- Book 4 -->
+                <div class="book-card">
+                    <div class="book-header">
+                        <span class="book-tag">Core SCM</span>
+                        <i class="fa-solid fa-truck-ramp-box" style="font-size: 2rem; opacity: 0.3;"></i>
+                        <h3>Improving Supply Chain Management: A Sustainable Approach</h3>
+                    </div>
+                    <div class="book-body">
+                        <p class="book-publisher"><strong>Publisher:</strong> AIRO Publication, India</p>
+                        <p class="book-desc">Focuses on sustainable green supply chain practices, logistics optimization, and carbon footprint reduction.</p>
+                    </div>
+                </div>
+
+                <!-- Book 5 -->
+                <div class="book-card">
+                    <div class="book-header">
+                        <span class="book-tag">Quality Systems</span>
+                        <i class="fa-solid fa-square-poll-vertical" style="font-size: 2rem; opacity: 0.3;"></i>
+                        <h3>NAAC Accreditation: Step-by-Step Guidelines</h3>
+                    </div>
+                    <div class="book-body">
+                        <p class="book-publisher"><strong>Publisher:</strong> Academic Press</p>
+                        <p class="book-desc">Comprehensive administrative guide for higher education institutions seeking NAAC / NBA accreditation.</p>
+                    </div>
+                </div>
+
+                <!-- Book 6 -->
+                <div class="book-card">
+                    <div class="book-header">
+                        <span class="book-tag">Global Business</span>
+                        <i class="fa-solid fa-earth-americas" style="font-size: 2rem; opacity: 0.3;"></i>
+                        <h3>International Business Management</h3>
+                    </div>
+                    <div class="book-body">
+                        <p class="book-publisher"><strong>Publisher:</strong> Horizon Books, India</p>
+                        <p class="book-desc">Covers commercial documentation, global market dynamics, foreign exchange, and cross-border trade policy.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Awards & Honors -->
+    <section class="section-padding" id="awards">
+        <div class="container">
+            <div class="section-title-wrap">
+                <span class="section-subtitle">Recognition</span>
+                <h2 class="section-title">Awards & Honors</h2>
+            </div>
+
+            <div class="awards-grid">
+                <div class="award-card">
+                    <div class="award-icon"><i class="fa-solid fa-trophy"></i></div>
+                    <div class="award-details">
+                        <h3>Pride of Maharashtra Award</h3>
+                        <div class="award-presenter">Presented by Higher Education Minister Uday Samant</div>
+                        <p class="award-desc">Conferred for exceptional leadership and contributions to higher education growth in Maharashtra.</p>
+                    </div>
+                </div>
+
+                <div class="award-card">
+                    <div class="award-icon"><i class="fa-solid fa-award"></i></div>
+                    <div class="award-details">
+                        <h3>International Glory Award</h3>
+                        <div class="award-presenter">Presented by Cine Artist Madhuri Dixit Nene & Sonu Sood</div>
+                        <p class="award-desc">Awarded as Best Educationalist and Academic Writer from Pune for global research impact.</p>
+                    </div>
+                </div>
+
+                <div class="award-card">
+                    <div class="award-icon"><i class="fa-solid fa-medal"></i></div>
+                    <div class="award-details">
+                        <h3>Dr. A.P.J. Abdul Kalam Award</h3>
+                        <div class="award-presenter">Emerging Author of the Year</div>
+                        <p class="award-desc">Recognized for prolific academic writing and scholarly publications in supply chain and management.</p>
+                    </div>
+                </div>
+
+                <div class="award-card">
+                    <div class="award-icon"><i class="fa-solid fa-star"></i></div>
+                    <div class="award-details">
+                        <h3>Indian Education Award</h3>
+                        <div class="award-presenter">Presented by Actress Soha Ali Khan</div>
+                        <p class="award-desc">Felicitation for excellence in management research, corporate training, and higher education mentorship.</p>
+                    </div>
+                </div>
+
+                <div class="award-card">
+                    <div class="award-icon"><i class="fa-solid fa-building-user"></i></div>
+                    <div class="award-details">
+                        <h3>Dr. Reddy International Award</h3>
+                        <div class="award-presenter">Academic Leadership Excellence</div>
+                        <p class="award-desc">Honored for vision in university administration, outcome-based curricula, and student employability.</p>
+                    </div>
+                </div>
+
+                <div class="award-card">
+                    <div class="award-icon"><i class="fa-solid fa-certificate"></i></div>
+                    <div class="award-details">
+                        <h3>Best Literacy Worker Award (1992)</h3>
+                        <div class="award-presenter">District Collectorate, Alleppey, Kerala</div>
+                        <p class="award-desc">Early recognition for grassroots literacy campaigns and educational community development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Credentials -->
+    <section class="section-padding" id="education" style="background: rgba(15, 23, 42, 0.02);">
+        <div class="container">
+            <div class="section-title-wrap">
+                <span class="section-subtitle">Qualifications</span>
+                <h2 class="section-title">Academic Qualifications</h2>
+            </div>
+
+            <div class="edu-grid">
+                <div class="edu-card">
+                    <div class="edu-degree">Ph.D. (Business Administration)</div>
+                    <div class="edu-univ">Madurai Kamaraj University, Tamil Nadu</div>
+                    <div class="edu-field">Doctoral specialization in Supply Chain & Operations</div>
+                </div>
+
+                <div class="edu-card">
+                    <div class="edu-degree">Ph.D. (Management)</div>
+                    <div class="edu-univ">Nehru Gram Bharati Deemed University, Allahabad</div>
+                    <div class="edu-field">Research in General Management & Academic Strategy</div>
+                </div>
+
+                <div class="edu-card">
+                    <div class="edu-degree">MBA (Finance)</div>
+                    <div class="edu-univ">Madurai Kamaraj University</div>
+                    <div class="edu-field">Corporate Finance & Commercial Documentation</div>
+                </div>
+
+                <div class="edu-card">
+                    <div class="edu-degree">M.Com. (Management)</div>
+                    <div class="edu-univ">Vinayaka Mission Sikkim University</div>
+                    <div class="edu-field">Advanced Organizational Strategy & Business Commerce</div>
+                </div>
+
+                <div class="edu-card">
+                    <div class="edu-degree">PGDM (Supply Chain Management)</div>
+                    <div class="edu-univ">Himalayan University, Arunachal Pradesh</div>
+                    <div class="edu-field">Logistics, SCM, and Inventory Control</div>
+                </div>
+
+                <div class="edu-card">
+                    <div class="edu-degree">PGDM (International Business)</div>
+                    <div class="edu-univ">Vinayaka Mission University, Salem</div>
+                    <div class="edu-field">Global Trade, Import-Export, and Custom Laws</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Footprint & Editorial Roles -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-title-wrap">
+                <span class="section-subtitle">Global Outreach</span>
+                <h2 class="section-title">Global Presence & Editorial Leadership</h2>
+            </div>
+
+            <div class="global-grid">
+                <div class="about-card">
+                    <h3>Editorial & Board Appointments</h3>
+                    <ul class="editorial-list">
+                        <li><i class="fa-solid fa-newspaper"></i> <strong>Editor-in-Chief:</strong> International Journal of Law, Management and Social Science (IJLMSS)</li>
+                        <li><i class="fa-solid fa-newspaper"></i> <strong>Associate Editor:</strong> International Journal of Transformations in Business Management</li>
+                        <li><i class="fa-solid fa-newspaper"></i> <strong>Editor:</strong> Phoenix International Multidisciplinary Research Journal</li>
+                        <li><i class="fa-solid fa-newspaper"></i> <strong>Advisory Board Member:</strong> IJ360 MR Journal & Vakdevatha Magazine</li>
+                    </ul>
+                </div>
+
+                <div class="about-card">
+                    <h3>International Academic Engagement</h3>
+                    <p>Invited keynote speaker, conference chair, and resource person across international forums:</p>
+                    <div class="country-chips">
+                        <div class="chip"><i class="fa-solid fa-location-dot"></i> USA (Michigan AIAG Summit)</div>
+                        <div class="chip"><i class="fa-solid fa-location-dot"></i> Singapore (NUS Shaw Hall)</div>
+                        <div class="chip"><i class="fa-solid fa-location-dot"></i> UAE (Dubai / Sharjah Book Fair)</div>
+                        <div class="chip"><i class="fa-solid fa-location-dot"></i> Thailand (Bangkok)</div>
+                        <div class="chip"><i class="fa-solid fa-location-dot"></i> Malaysia</div>
+                        <div class="chip"><i class="fa-solid fa-location-dot"></i> Philippines</div>
+                        <div class="chip"><i class="fa-solid fa-location-dot"></i> Vietnam</div>
+                        <div class="chip"><i class="fa-solid fa-location-dot"></i> Sri Lanka</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section-padding" id="contact">
+        <div class="container">
+            <div class="contact-wrap">
+                <div class="contact-info-panel">
+                    <div>
+                        <h3>Get In Touch</h3>
+                        <p>Available for keynotes, institutional collaborations, advisory roles, and academic research partnerships.</p>
+                        
+                        <div class="contact-item">
+                            <div class="contact-item-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="contact-item-text">
+                                <span>Official Email</span>
+                                <a href="mailto:prakashtek@gmail.com">prakashtek@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-item-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div class="contact-item-text">
+                                <span>Phone / WhatsApp</span>
+                                <a href="tel:+919545553130">+91 95455 53130</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-item-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="contact-item-text">
+                                <span>Locations</span>
+                                <p>Pune, Maharashtra | Itanagar, Arunachal Pradesh, India</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 20px;">
+                        <span style="display: block; font-size: 0.8rem; color: #94a3b8; margin-bottom: 10px;">CONNECT SOCIALLY</span>
+                        <div style="display: flex; gap: 12px;">
+                            <a href="https://linkedin.com/in/dr-prakash-divakaran" target="_blank" style="width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,0.1); color: #fff; display: flex; align-items: center; justify-content: center;"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://scholar.google.com" target="_blank" style="width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,0.1); color: #fff; display: flex; align-items: center; justify-content: center;"><i class="fa-solid fa-graduation-cap"></i></a>
+                            <a href="https://researchgate.net" target="_blank" style="width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,0.1); color: #fff; display: flex; align-items: center; justify-content: center;"><i class="fa-brands fa-researchgate"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-panel">
+                    <form id="portfolioContactForm">
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" class="form-control" placeholder="Prof. / Dr. / Mr. / Ms." required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" class="form-control" placeholder="yourname@institution.edu" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Subject / Purpose</label>
+                            <input type="text" class="form-control" placeholder="Academic Invitation / MoU / Research Keynote" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea class="form-control" rows="4" placeholder="Brief details about your inquiry..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-accent" style="width: 100%; justify-content: center; border: none; cursor: pointer;">
+                            <i class="fa-solid fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>Prof. Dr. Prakash Divakaran</h3>
+                    <p>Vice Chancellor, Himalayan University. A visionary leader committed to advancing higher education, multidisciplinary research, and industrial integration globally.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About VC</a></li>
+                        <li><a href="#competencies">Leadership Pillars</a></li>
+                        <li><a href="#experience">Administrative Experience</a></li>
+                        <li><a href="#publications">Books & Papers</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Key Focus</h4>
+                    <ul>
+                        <li>NEP 2020 Implementation</li>
+                        <li>Supply Chain Management</li>
+                        <li>NAAC / NBA Accreditation</li>
+                        <li>Doctoral Mentorship</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                &copy; <script>document.write(new Date().getFullYear())</script> Prof. Dr. Prakash Divakaran. All Rights Reserved. Designed for Academic & Institutional Excellence.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive JavaScript -->
+    <script>
+        // Mobile Navigation Menu Toggle
+        const mobileToggle = document.getElementById('mobileToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        mobileToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+
+        // Close mobile nav on link click
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('show');
+            });
+        });
+
+        // Active Link Highlight on Scroll
+        const sections = document.querySelectorAll('section');
+        const navItems = document.querySelectorAll('.nav-links a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= (sectionTop - 120)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navItems.forEach(item => {
+                item.classList.remove('active');
+                if (item.getAttribute('href') === `#${current}`) {
+                    item.classList.add('active');
+                }
+            });
+        });
+
+        // Form Submit Handler Mockup
+        document.getElementById('portfolioContactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for reaching out to Prof. Dr. Prakash Divakaran. Your message has been transmitted successfully.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
